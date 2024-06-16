@@ -36,7 +36,7 @@ function Groups() {
     };
 
     axios
-      .get("http://localhost:https://real-time-chat-application-zeta.vercel.app//chat/fetchGroups", config)
+      .get("https://realtime-chat-application-cdbs.onrender.com.app/chat/fetchGroups", config)
       .then((response) => {
         console.log("Group Data from API ", response.data);
         SetGroups(response.data);

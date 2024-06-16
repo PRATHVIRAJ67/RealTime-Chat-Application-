@@ -31,7 +31,7 @@ function ChatArea() {
     };
     axios
       .post(
-        "http://localhost:https://real-time-chat-application-zeta.vercel.app//message/",
+        "http://localhost:https://real-time-chat-application-zeta.https://realtime-chat-application-cdbs.onrender.com.app//message/",
         {
           content: messageContent,
           chatId: chat_id,
@@ -52,7 +52,7 @@ function ChatArea() {
       },
     };
     axios
-      .get("http://localhost:https://real-time-chat-application-zeta.vercel.app//message/" + chat_id, config)
+      .get("http://localhost:https://real-time-chat-application-zeta.https://realtime-chat-application-cdbs.onrender.com.app//message/" + chat_id, config)
       .then(({ data }) => {
         setAllMessages(data);
         setloaded(true);
