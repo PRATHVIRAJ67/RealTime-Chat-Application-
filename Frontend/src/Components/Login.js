@@ -30,7 +30,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "http://localhost:8080/user/login/",
+        "http://localhost:https://real-time-chat-application-zeta.vercel.app//user/login/",
         data,
         config
       );
@@ -58,7 +58,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "http://localhost:8080/user/register/",
+        "http://localhost:https://real-time-chat-application-zeta.vercel.app//user/register/",
         data,
         config
       );
