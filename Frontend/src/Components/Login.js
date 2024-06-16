@@ -9,7 +9,7 @@ function Login() {
   const [showlogin, setShowLogin] = useState(false);
   const [data, setData] = useState({ name: "", email: "", password: "" });
   const [loading, setLoading] = useState(false);
-
+const PORT =process.env.PORT;
   const [logInStatus, setLogInStatus] = React.useState("");
   const [signInStatus, setSignInStatus] = React.useState("");
 
@@ -30,7 +30,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "https://realtime-chat-application-cdbs.onrender.com/user/login",
+        `${PORT}user/login`,
         data,
         config
       );

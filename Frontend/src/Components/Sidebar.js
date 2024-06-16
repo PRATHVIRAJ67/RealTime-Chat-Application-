@@ -41,7 +41,7 @@ function Sidebar() {
       },
     };
 
-    axios.get("https://realtime-chat-application-cdbs.onrender.com/app/chat", config).then((response) => {
+    axios.get("https://realtime-chat-application-cdbs.onrender.com/chat", config).then((response) => {
       console.log("Data refresh in sidebar ", response.data);
       setConversations(response.data);
      

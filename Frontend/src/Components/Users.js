@@ -34,7 +34,7 @@ function Users() {
         Authorization: `Bearer ${userData.data.token}`,
       },
     };
-    axios.get("http://localhost:https://real-time-chat-application-zeta.https://realtime-chat-application-cdbs.onrender.com.app//user/fetchUsers", config).then((data) => {
+    axios.get("https://realtime-chat-application-cdbs.onrender.com/user/fetchUsers", config).then((data) => {
       console.log("UData refreshed in Users panel ");
       setUsers(data.data);
       
@@ -94,7 +94,7 @@ function Users() {
                     },
                   };
                   axios.post(
-                    "https://realtime-chat-application-cdbs.onrender.com/app/chat",
+                    "https://realtime-chat-application-cdbs.onrender.com/chat",
                     {
                       userId: user._id,
                     },
